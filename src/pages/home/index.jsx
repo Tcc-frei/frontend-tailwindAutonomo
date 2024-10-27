@@ -120,21 +120,21 @@ export default function Home() {
       </section>
       <section className="flex flex-col text-center my-6">
         <h1 className="text-4xl font-medium mt-4">Feedback</h1>
-        <div className="flex py-14 px-20 gap-20  justify-center">
-          <CardPerson 
-          nome="João Silva"
-          local="São Paulo, SP"
-          imagemPerson="/src/assets/images/person1.svg"
+        <div className="flex py-14 px-20 gap-24  justify-center">
+          <CardPerson
+            nome="João Silva"
+            local="São Paulo, SP"
+            imagemPerson="/src/assets/images/person1.svg"
           />
-           <CardPerson 
-          nome="Leonardo da Silva"
-          local="São Paulo, SP"
-          imagemPerson="/src/assets/images/person2.svg"
+          <CardPerson
+            nome="Leonardo da Silva"
+            local="São Paulo, SP"
+            imagemPerson="/src/assets/images/person2.svg"
           />
-           <CardPerson 
-          nome="Maria Pinto"
-          local="São Paulo, SP"
-          imagemPerson="/src/assets/images/person3.svg"
+          <CardPerson
+            nome="Maria Pinto"
+            local="São Paulo, SP"
+            imagemPerson="/src/assets/images/person3.svg"
           />
         </div>
       </section>

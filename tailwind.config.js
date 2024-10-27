@@ -17,13 +17,15 @@ export default {
         animation: {
           "move-lightning": "move-lightning 0.3s ease-in-out infinite",
         },
-        colors: {
-          botao: "#ff9900",
-          "back-cinza": "#D9D9D9",
-          "footer-cinza": "#1E1E1E",
-        },
+      },
+      colors: {
+        botao: "#ff9900",
+        "back-cinza": "#D9D9D9",
+        "footer-cinza": "#1E1E1E",
+        "span-cinza": "#8B8B8B",
+        "back-about": "#EDEDED"
       },
     },
-    plugins: [],
   },
+  plugins: [],
 };

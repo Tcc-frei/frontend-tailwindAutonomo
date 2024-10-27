@@ -16,17 +16,17 @@ export default function Header() {
 
       <div>
         <ul className="flex items-center gap-5 font-Roboto">
-          <Link>
+          <Link to='/'>
             <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg    py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
               Home
             </li>
           </Link>
-          <Link>
+          <Link to='/about'>
             <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
               Sobre nós
             </li>
           </Link>
-          <Link>
+          <Link to='/contact'>
             <li className="transform hover:scale-105 hover:bg-zinc-400  transform hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out  font-medium hover:text-white">
               Contato
             </li>
