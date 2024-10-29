@@ -11,13 +11,13 @@ export default function Home() {
         <img
           src="/src/assets/images/eletricistImg2.svg"
           alt="imagem eletricista"
-          className="-z-1"
+          className=""
         />
-        <div className="flex flex-col absolute top-80 left-20 text-white font-Roboto gap-5">
+        <div className="flex flex-col absolute top-80 left-20 text-white font-Roboto gap-5 tablet:top-60 mini-tablet:top-40">
           <h1 className="text-5xl font-medium tracking-wide	 ">
-            ELétrica & mais
+            Elétrica & mais
           </h1>
-          <p className="font-light text-3xl">
+          <p className="font-light text-3xl"> 
             Um serviço em que você pode confiar
           </p>
           <button className="py-2 px-5 rounded-md w-fit bg-botao hover:bg-botao/60 transition-all duration-300 ">
@@ -28,9 +28,9 @@ export default function Home() {
 
       <section className="flex flex-col py-8 px-28 items-center justify-center">
         <div className="flex gap-10 items-center">
-          <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10">
+          <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10 tablet:w-full ">
             <h2 className="text-4xl font-semibold">ELETHRONOS</h2>
-            <p className="text-2xl font-normal text-left leading-9">
+            <p className="text-2xl font-normal text-left leading-9 ">
               presta serviços a mais de 15 anos, sendo firmado como um dos
               serviços mais sólidos do mercado,atuando no mercado com manutenção
               residencial, manutenção de aparelhos eletronicos.
@@ -43,7 +43,7 @@ export default function Home() {
             <img
               src="/src/assets/images/eletricist.svg"
               alt="eletricista"
-              className="w-full p-2"
+              className="w-full p-2 tablet:hidden"
             />
           </div>
         </div>
@@ -62,6 +62,7 @@ export default function Home() {
             <img
               src="/src/assets/images/eletricImg1.svg"
               alt="imagem placa eletrica"
+
             />
             <h2 className="text-3xl font-medium ">Preventiva</h2>
             <p className="text-lg">
@@ -98,29 +99,29 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col text-center bg-back-cinza mt-10  gap-4 py-6 ">
+      <section className="flex flex-col text-center bg-back-cinza mt-10  gap-4 py-6  mini-tablet:overflow-x-auto">
         <h4 className="text-4xl font-medium">Projeto Recentes</h4>
-        <div className="flex justify-between">
+        <div className="flex justify-between ">
           <img
             src="/src/assets/images/projeto1.svg"
             alt="imagem projeto 1"
-            className=" p-8 h-80 ml-10"
+            className=" p-8 h-80 ml-10 mini-tablet:p-14 mini-tablet:ml-0 "
           />
           <img
             src="/src/assets/images/projeto2.svg"
             alt="imagem projeto 2"
-            className=" p-8 h-80 "
+            className=" p-8 h-80  mini-tablet:p-14"
           />
           <img
             src="/src/assets/images/projeto3.svg"
             alt="imagem projeto 3"
-            className=" p-8 h-80 mr-10"
+            className=" p-8 h-80 mr-10 tablet:hidden mini-tablet:hidden mini-tablet:ml-0 "
           />
         </div>
       </section>
       <section className="flex flex-col text-center my-6">
         <h1 className="text-4xl font-medium mt-4">Feedback</h1>
-        <div className="flex py-14 px-20 gap-24  justify-center">
+        <div className="flex py-14 px-20 gap-24  justify-center tablet:flex-wrap mini-tablet:overflow-x-auto mini-tablet:flex-wrap">
           <CardPerson
             nome="João Silva"
             local="São Paulo, SP"
@@ -138,7 +139,10 @@ export default function Home() {
           />
         </div>
       </section>
+      <div>
+
       <Footer />
+      </div>
     </div>
   );
 }

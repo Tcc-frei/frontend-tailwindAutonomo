@@ -24,7 +24,17 @@ export default {
         "footer-cinza": "#1E1E1E",
         "span-cinza": "#8B8B8B",
         "back-about": "#EDEDED"
-      },
+      },     
+    },
+    screens:{
+      "max-sm": {'max': "639px"},
+      "max-md": {'max': '768px'},
+      "max-lg": {"max": '976px'},
+      "tablet": {"max": "884px"},
+      "mini-tablet": {"max": "800px"},
+      "max-2xl": {"max":'1440px'},
+      "max-xl": {"max":'1280px'},
+      'max-3xl':{"max": '1536px'},
     },
   },
   plugins: [],

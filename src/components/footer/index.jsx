@@ -7,7 +7,7 @@ export default function Footer() {
       <img
         src="/src/assets/images/mapaFooter.svg"
         alt="mapa footer"
-        className="-z-1 block"
+        className=""
       />
       <div className="flex flex-col  text-white font-Roboto absolute ml-28">
         <h1 className="text-3xl font-medium flex gap-2 items-center justify-center mb-4">
