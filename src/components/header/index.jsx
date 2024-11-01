@@ -8,7 +8,7 @@ export default function Header() {
       <div className="flex items-center gap-4 ">
         <img
           className="animate-move-lightning"
-          src="/src/assets/images/Bolt.svg"
+          src="/images/Bolt.svg"
           alt="Imagem Raio"
         />
         <h1 className="font-SquadaOne text-4xl"> ELETHRONOS</h1>

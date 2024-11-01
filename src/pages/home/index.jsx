@@ -2,6 +2,7 @@ import "/src/index.css";
 import Header from "../../components/header";
 import CardPerson from "../../components/cardPerson";
 import Footer from "../../components/footer";
+import {Link} from 'react-router-dom'
 export default function Home() {
   return (
     <div className="flex flex-col  ">
@@ -9,7 +10,7 @@ export default function Home() {
 
       <div>
         <img
-          src="/src/assets/images/eletricistImg2.svg"
+          src="/images/eletricistImg2.svg"
           alt="imagem eletricista"
           className=""
         />
@@ -20,9 +21,12 @@ export default function Home() {
           <p className="font-light text-3xl"> 
             Um serviço em que você pode confiar
           </p>
+          <Link to={'/about'}>
           <button className="py-2 px-5 rounded-md w-fit bg-botao hover:bg-botao/60 transition-all duration-300 ">
             Conheça-nos
           </button>
+          </Link>
+        
         </div>
       </div>
 
@@ -35,13 +39,16 @@ export default function Home() {
               serviços mais sólidos do mercado,atuando no mercado com manutenção
               residencial, manutenção de aparelhos eletronicos.
             </p>
+            <Link to={'/about'}>
             <button className="py-2 px-8  w-fit bg-botao hover:bg-botao/60 transition-all  duration-300 text-white">
               Ver mais...
-            </button>
+            </button> 
+            </Link>
+          
           </div>
           <div className="flex items-center p-8">
             <img
-              src="/src/assets/images/eletricist.svg"
+              src="/images/Eletricist.svg"
               alt="eletricista"
               className="w-full p-2 tablet:hidden"
             />
@@ -60,7 +67,7 @@ export default function Home() {
         <div className="flex items-center justify-center gap-10">
           <div className="flex items-center flex-col p-8 gap-4">
             <img
-              src="/src/assets/images/eletricImg1.svg"
+              src="/images/eletricImg1.svg"
               alt="imagem placa eletrica"
 
             />
@@ -74,7 +81,7 @@ export default function Home() {
 
           <div className="flex items-center flex-col p-8 gap-4">
             <img
-              src="/src/assets/images/eletricImgLampada.svg"
+              src="/images/eletricImgLampada.svg"
               alt="imagem lampada cinza"
             />
             <h2 className="text-3xl font-medium ">Instalação elétrica</h2>
@@ -87,7 +94,7 @@ export default function Home() {
           </div>
           <div className="flex items-center flex-col p-8 gap-4">
             <img
-              src="/src/assets/images/eletricImgTomada.svg"
+              src="/images/eletricImgTomada.svg"
               alt="imagem tomada cinza"
             />
             <h2 className="text-2xl font-medium ">Reparos & Manutenção</h2>
@@ -103,17 +110,17 @@ export default function Home() {
         <h4 className="text-4xl font-medium">Projeto Recentes</h4>
         <div className="flex justify-between ">
           <img
-            src="/src/assets/images/projeto1.svg"
+            src="/images/projeto1.svg"
             alt="imagem projeto 1"
             className=" p-8 h-80 ml-10 mini-tablet:p-14 mini-tablet:ml-0 "
           />
           <img
-            src="/src/assets/images/projeto2.svg"
+            src="/images/projeto2.svg"
             alt="imagem projeto 2"
             className=" p-8 h-80  mini-tablet:p-14"
           />
           <img
-            src="/src/assets/images/projeto3.svg"
+            src="/images/projeto3.svg"
             alt="imagem projeto 3"
             className=" p-8 h-80 mr-10 tablet:hidden mini-tablet:hidden mini-tablet:ml-0 "
           />
@@ -125,17 +132,17 @@ export default function Home() {
           <CardPerson
             nome="João Silva"
             local="São Paulo, SP"
-            imagemPerson="/src/assets/images/person1.svg"
+            imagemPerson="/images/person1.svg"
           />
           <CardPerson
             nome="Leonardo da Silva"
             local="São Paulo, SP"
-            imagemPerson="/src/assets/images/person2.svg"
+            imagemPerson="/images/person2.svg"
           />
           <CardPerson
             nome="Maria Pinto"
             local="São Paulo, SP"
-            imagemPerson="/src/assets/images/person3.svg"
+            imagemPerson="/images/person3.svg"
           />
         </div>
       </section>

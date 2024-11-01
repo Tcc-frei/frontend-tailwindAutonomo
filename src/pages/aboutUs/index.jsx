@@ -9,7 +9,7 @@ export default function AbousUs() {
       <div className="flex flex-col items-center justify-center bg-back-about">
         <h1 className="text-6xl font-medium text-white absolute">Sobre nós</h1>
         <img
-          src="/src/assets/images/aboutUsImage.svg"
+          src="/images/aboutUsImage.svg"
           alt="imagem sobre nós-page"
           className="max-w-full"
         />
@@ -21,7 +21,7 @@ export default function AbousUs() {
         </div>
         <div className="flex gap-20">
           <img
-            src="/src/assets/images/imagemSobrenos.svg"
+            src="/images/imagemSobrenos.svg"
             className="tablet:hidden"
             alt="imagem sobre nós"
           />

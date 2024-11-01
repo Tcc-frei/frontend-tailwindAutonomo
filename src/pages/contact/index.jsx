@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-6xl font-medium text-white absolute">Contato</h1>
         <img
-          src="/src/assets/images/contactImage.svg"
+          src="/images/contactImage.svg"
           alt="imagem Contato-Page"
           className="max-w-full"
         />
@@ -21,7 +21,7 @@ export default function Contact() {
           Home &gt; Sobre nós
         </div>
         <img
-          src="/src/assets/images/contatoMapaImage.svg"
+          src="/images/contatoMapaImage.svg"
           alt="imagem contato"
           className="w-full h-auto"
         />

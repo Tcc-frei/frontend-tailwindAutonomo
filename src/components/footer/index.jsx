@@ -5,14 +5,14 @@ export default function Footer() {
   return (
     <div className="flex bg-footer-cinza justify-between items-center">
       <img
-        src="/src/assets/images/mapaFooter.svg"
+        src="/images/mapaFooter.svg"
         alt="mapa footer"
         className=""
       />
       <div className="flex flex-col  text-white font-Roboto absolute ml-28">
         <h1 className="text-3xl font-medium flex gap-2 items-center justify-center mb-4">
           {" "}
-          <img src="/src/assets/images/lampadaWhite.svg" alt="" className="animate-blink"/> ELÉTRICA
+          <img src="/images/lampadaWhite.svg" alt="" className="animate-blink"/> ELÉTRICA
         </h1>
         <p>electro@gmail.com</p>
         <p>+55119999999</p>
@@ -22,28 +22,28 @@ export default function Footer() {
         <div className="flex gap-3 ml-4 ">
           <Link>
             <img
-              src="/src/assets/images/face.png"
+              src="/images/face.png"
               alt="facebook image"
               className="transition-all dutarion-300  hover:scale-110  hover:bg-[#3b5998]"
             />
           </Link>
           <Link>
             <img
-              src="/src/assets/images/twitter.png"
+              src="/images/twitter.png"
               alt="twitter image"
               className="transition-all dutarion-300 transform hover:scale-110   hover:bg-[#1da1f2]"
             />
           </Link>
           <Link>
             <img
-              src="/src/assets/images/insta.png"
+              src="/images/insta.png"
               alt="instagram image"
               className="transition-all dutarion-300 transform hover:scale-110 hover:bg-gradient-to-r from-[#fdf497] via-[#fd5949] via-[#d6249f] to-[#285aeb]"
             />
           </Link>
           <Link>
             <img
-              src="/src/assets/images/google.png"
+              src="/images/google.png"
               alt="google image"
               className="transition-all dutarion-300 transforma hover:scale-110   hover:bg-[#db4437]"
             />
