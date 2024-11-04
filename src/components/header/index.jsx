@@ -1,10 +1,21 @@
 import "/src/index.css";
+import { List } from "lucide-react";
 import { Zap } from "lucide-react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [modalLista, setModalLista] = useState(false);
+  const [lista, setLista] = useState(false);
+  useEffect(() => {
+    if (modalLista == false) {
+      setLista(true);
+    }
+  }, [modalLista]);
+
   return (
-    <header className="flex justify-between items-center h-14  p-4 ">
+    <header className="flex justify-between items-center h-14  p-4  min-w-full">
       <div className="flex items-center gap-4 ">
         <img
           className="animate-move-lightning"
@@ -15,22 +26,55 @@ export default function Header() {
       </div>
 
       <div>
-        <ul className="flex items-center gap-5 font-Roboto">
-          <Link to='/'>
-            <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg    py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
-              Home
-            </li>
-          </Link>
-          <Link to='/about'>
-            <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
-              Sobre nós
-            </li>
-          </Link>
-          <Link to='/contact'>
-            <li className="transform hover:scale-105 hover:bg-zinc-400  transform hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out  font-medium hover:text-white">
-              Contato
-            </li>
-          </Link>
+        <ul className="flex items-center gap-5 font-Roboto ">
+          <li
+            onClick={() => setModalLista(!modalLista)}
+            className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white cursor-pointer hidden lista:block"
+          >
+            <List />
+          </li>
+          {modalLista && (
+            <div>
+              <div className="bg-white w-32 h-screen absolute right-0 flex flex-col gap-6 items-center shadow-2xl ">
+                <Link to="/">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg    py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
+                    Home
+                  </li>
+                </Link>
+                <Link to="/about">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
+                    Sobre nós
+                  </li>
+                </Link>
+                <Link to="/contact">
+                  <li className="hover:scale-105 hover:bg-zinc-400  transform hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out  font-medium hover:text-white">
+                    Contato
+                  </li>
+                </Link>
+              </div>
+            </div>
+          )}
+          {lista && (
+            <div>
+              <ul className="flex items-center gap-5 font-Roboto lista:hidden">
+                <Link to="/">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg    py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
+                    Home
+                  </li>
+                </Link>
+                <Link to="/about">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
+                    Sobre nós
+                  </li>
+                </Link>
+                <Link to="/contact">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400   hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out  font-medium hover:text-white">
+                    Contato
+                  </li>
+                </Link>
+              </ul>
+            </div>
+          )}
         </ul>
       </div>
     </header>

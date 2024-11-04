@@ -27,7 +27,7 @@ export default {
       },     
     },
     screens:{
-      "max-sm": {'max': "639px"},
+      "max-sm": {'max': "686px"},
       "max-md": {'max': '768px'},
       "max-lg": {"max": '976px'},
       "tablet": {"max": "884px"},
@@ -35,6 +35,7 @@ export default {
       "max-2xl": {"max":'1440px'},
       "max-xl": {"max":'1280px'},
       'max-3xl':{"max": '1536px'},
+      'lista': {"max": "684px"},
     },
   },
   plugins: [],

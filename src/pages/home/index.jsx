@@ -12,7 +12,7 @@ export default function Home() {
         <img
           src="/images/eletricistImg2.svg"
           alt="imagem eletricista"
-          className=""
+          className="min-w-full"
         />
         <div className="flex flex-col absolute top-80 left-20 text-white font-Roboto gap-5 tablet:top-60 mini-tablet:top-40">
           <h1 className="text-5xl font-medium tracking-wide	 ">
@@ -32,7 +32,7 @@ export default function Home() {
 
       <section className="flex flex-col py-8 px-28 items-center justify-center">
         <div className="flex gap-10 items-center">
-          <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10 tablet:w-full ">
+          <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10 tablet:w-full max-lg:w-full ">
             <h2 className="text-4xl font-semibold">ELETHRONOS</h2>
             <p className="text-2xl font-normal text-left leading-9 ">
               presta serviços a mais de 15 anos, sendo firmado como um dos
@@ -46,11 +46,11 @@ export default function Home() {
             </Link>
           
           </div>
-          <div className="flex items-center p-8">
+          <div className="flex items-center p-8 ">
             <img
               src="/images/Eletricist.svg"
               alt="eletricista"
-              className="w-full p-2 tablet:hidden"
+              className="w-full p-2 tablet:hidden max-lg:hidden "
             />
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function Home() {
           <img
             src="/images/projeto3.svg"
             alt="imagem projeto 3"
-            className=" p-8 h-80 mr-10 tablet:hidden mini-tablet:hidden mini-tablet:ml-0 "
+            className=" p-8 h-80 mr-10 tablet:hidden mini-tablet:hidden mini-tablet:ml-0  max-lg:hidden"
           />
         </div>
       </section>
