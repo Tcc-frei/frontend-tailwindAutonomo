@@ -17,21 +17,21 @@ export default function Footer() {
         <p>electro@gmail.com</p>
         <p>+55119999999</p>
       </div>
-      <div className="flex flex-col gap-4 items-start mr-24 ">
+      <div className="flex flex-col gap-4 items-start mr-24 max-sm1:hidden  ">
         <h6 className="text-xl font-medium text-white">Redes Sociais</h6>
         <div className="flex gap-3 ml-4 ">
           <Link>
             <img
               src="/images/face.png"
               alt="facebook image"
-              className="transition-all dutarion-300  hover:scale-110  hover:bg-[#3b5998]"
+              className="transition-all dutarion-300  hover:scale-110  hover:bg-[#3b5998]  "
             />
           </Link>
           <Link>
             <img
               src="/images/twitter.png"
               alt="twitter image"
-              className="transition-all dutarion-300 transform hover:scale-110   hover:bg-[#1da1f2]"
+              className="transition-all dutarion-300 transform hover:scale-110   hover:bg-[#1da1f2] "
             />
           </Link>
           <Link>

@@ -14,7 +14,7 @@ export default function Home() {
           alt="imagem eletricista"
           className="min-w-full"
         />
-        <div className="flex flex-col absolute top-80 left-20 text-white font-Roboto gap-5 tablet:top-60 mini-tablet:top-40">
+        <div className="flex flex-col absolute top-80 left-20 text-white font-Roboto gap-5 tablet:top-60 mini-tablet:top-40 max-sm1:top-5 max-sm1:left-10 ">
           <h1 className="text-5xl font-medium tracking-wide	 ">
             Elétrica & mais
           </h1>
@@ -32,9 +32,9 @@ export default function Home() {
 
       <section className="flex flex-col py-8 px-28 items-center justify-center">
         <div className="flex gap-10 items-center">
-          <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10 tablet:w-full max-lg:w-full ">
+          <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10 tablet:w-full max-lg:w-full max-sm1:p-2 max-sm1:w-full ">
             <h2 className="text-4xl font-semibold">ELETHRONOS</h2>
-            <p className="text-2xl font-normal text-left leading-9 ">
+            <p className="text-2xl font-normal text-left leading-9 max-sm1:leading-7">
               presta serviços a mais de 15 anos, sendo firmado como um dos
               serviços mais sólidos do mercado,atuando no mercado com manutenção
               residencial, manutenção de aparelhos eletronicos.
@@ -64,8 +64,8 @@ export default function Home() {
           propriedades residenciais e comerciais
         </p>
 
-        <div className="flex items-center justify-center gap-10">
-          <div className="flex items-center flex-col p-8 gap-4">
+        <div className="flex items-center justify-center gap-10 max-sm1:flex-wrap">
+          <div className="flex items-center flex-col p-8 gap-4  max-sm1:gap-2 max-sm1:p-2">
             <img
               src="/images/eletricImg1.svg"
               alt="imagem placa eletrica"
@@ -79,7 +79,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex items-center flex-col p-8 gap-4">
+          <div className="flex items-center flex-col p-8 gap-4 max-sm1:gap-2 max-sm1:p-2">
             <img
               src="/images/eletricImgLampada.svg"
               alt="imagem lampada cinza"
@@ -92,7 +92,7 @@ export default function Home() {
               estabelecimentos comerciais, como lojas, escritórios, etc.
             </p>
           </div>
-          <div className="flex items-center flex-col p-8 gap-4">
+          <div className="flex items-center flex-col p-8 gap-4 max-sm1:gap-2 max-sm1:p-2">
             <img
               src="/images/eletricImgTomada.svg"
               alt="imagem tomada cinza"
