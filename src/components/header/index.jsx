@@ -16,13 +16,13 @@ export default function Header() {
 
   return (
     <header className="flex justify-between items-center h-14  p-4  min-w-full">
-      <div className="flex items-center gap-4 ">
+      <div className="flex items-center gap-4 max-xs:gap-2">
         <img
-          className="animate-move-lightning"
+          className="animate-move-lightning w-8 h-8" 
           src="/images/Bolt.svg"
           alt="Imagem Raio"
         />
-        <h1 className="font-SquadaOne text-4xl"> ELETHRONOS</h1>
+        <h1 className="font-SquadaOne text-4xl max-xs:text-2xl"> ELETHRONOS</h1>
       </div>
 
       <div>
@@ -37,7 +37,7 @@ export default function Header() {
             <div>
               <div className="bg-white w-32 h-screen absolute right-0 flex flex-col gap-6 items-center shadow-2xl ">
                 <Link to="/">
-                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg    py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
                     Home
                   </li>
                 </Link>

@@ -2,7 +2,7 @@ import "/src/index.css";
 import Header from "../../components/header";
 import CardPerson from "../../components/cardPerson";
 import Footer from "../../components/footer";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="flex flex-col  ">
@@ -14,37 +14,35 @@ export default function Home() {
           alt="imagem eletricista"
           className="min-w-full"
         />
-        <div className="flex flex-col absolute top-80 left-20 text-white font-Roboto gap-5 tablet:top-60 mini-tablet:top-40 max-sm1:top-5 max-sm1:left-10 ">
-          <h1 className="text-5xl font-medium tracking-wide	 ">
+        <div className="flex flex-col absolute top-80 left-20 text-white font-Roboto gap-5 max-xs:top-0 tablet:top-60 mini-tablet:top-24 max-sm1:top-5 max-sm1:left-10   max-xs:gap-2">
+          <h1 className="text-5xl font-medium tracking-wide	max-xs:text-2xl">
             Elétrica & mais
           </h1>
-          <p className="font-light text-3xl"> 
+          <p className="font-light text-3xl max-xs:text-sm">
             Um serviço em que você pode confiar
           </p>
-          <Link to={'/about'}>
-          <button className="py-2 px-5 rounded-md w-fit bg-botao hover:bg-botao/60 transition-all duration-300 ">
-            Conheça-nos
-          </button>
+          <Link to={"/about"}>
+            <button className="py-2 px-5 rounded-md w-fit bg-botao hover:bg-botao/60 transition-all duration-300 max-xs:text-sm max-xs:px-2 max-xs:py-1">
+              Conheça-nos
+            </button>
           </Link>
-        
         </div>
       </div>
 
-      <section className="flex flex-col py-8 px-28 items-center justify-center">
-        <div className="flex gap-10 items-center">
-          <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10 tablet:w-full max-lg:w-full max-sm1:p-2 max-sm1:w-full ">
-            <h2 className="text-4xl font-semibold">ELETHRONOS</h2>
-            <p className="text-2xl font-normal text-left leading-9 max-sm1:leading-7">
+      <section className="flex flex-col py-8 px-28 items-center justify-center max-xs:p-0 ">
+        <div className="flex gap-10 items-center max-xs:p-2">
+          <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10 tablet:w-full max-lg:w-full max-sm1:p-2 max-sm1:w-full max-xs:text-sm max-xs:gap-6 max-xs:mb-10 ">
+            <h2 className="text-4xl font-semibold max-xs:text-2xl">ELETHRONOS</h2>
+            <p className="text-2xl font-normal text-left leading-9 max-sm1:leading-7 max-xs:text-xl "> 
               presta serviços a mais de 15 anos, sendo firmado como um dos
               serviços mais sólidos do mercado,atuando no mercado com manutenção
               residencial, manutenção de aparelhos eletronicos.
             </p>
-            <Link to={'/about'}>
-            <button className="py-2 px-8  w-fit bg-botao hover:bg-botao/60 transition-all  duration-300 text-white">
-              Ver mais...
-            </button> 
+            <Link to={"/about"}>
+              <button className="py-2 px-8  w-fit bg-botao hover:bg-botao/60 transition-all  duration-300 text-white">
+                Ver mais...
+              </button>
             </Link>
-          
           </div>
           <div className="flex items-center p-8 ">
             <img
@@ -66,11 +64,7 @@ export default function Home() {
 
         <div className="flex items-center justify-center gap-10 max-sm1:flex-wrap">
           <div className="flex items-center flex-col p-8 gap-4  max-sm1:gap-2 max-sm1:p-2">
-            <img
-              src="/images/eletricImg1.svg"
-              alt="imagem placa eletrica"
-
-            />
+            <img src="/images/eletricImg1.svg" alt="imagem placa eletrica" />
             <h2 className="text-3xl font-medium ">Preventiva</h2>
             <p className="text-lg">
               <b>inspeção </b>feita de tempos em tempos nas instalações
@@ -93,10 +87,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex items-center flex-col p-8 gap-4 max-sm1:gap-2 max-sm1:p-2">
-            <img
-              src="/images/eletricImgTomada.svg"
-              alt="imagem tomada cinza"
-            />
+            <img src="/images/eletricImgTomada.svg" alt="imagem tomada cinza" />
             <h2 className="text-2xl font-medium ">Reparos & Manutenção</h2>
             <p className="text-lg">
               <b>Reparo e manutenção elétrica </b>envolve o diagnóstico,
@@ -147,8 +138,7 @@ export default function Home() {
         </div>
       </section>
       <div>
-
-      <Footer />
+        <Footer />
       </div>
     </div>
   );

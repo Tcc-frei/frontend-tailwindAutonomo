@@ -7,15 +7,15 @@ export default function AbousUs() {
     <div className="h-fit">
       <Header />
       <div className="flex flex-col items-center justify-center bg-back-about">
-        <h1 className="text-6xl font-medium text-white absolute">Sobre nós</h1>
+        <h1 className="text-6xl font-medium text-white absolute max-xs:text-4xl">Sobre nós</h1>
         <img
           src="/images/aboutUsImage.svg"
           alt="imagem sobre nós-page"
-          className="max-w-full"
+          className="max-w-full "
         />
       </div>
-      <div className="flex  flex-col items-center justify-between px-24 pb-6 bg-back-about mini-tablet:h-full">
-        <div className="w-full py-4 text-span-cinza mb-4">
+      <div className="flex  flex-col items-center justify-between px-24 pb-6 bg-back-about mini-tablet:h-full max-xs:px-0">
+        <div className="w-full py-4 text-span-cinza mb-4 max-xs:px-10">
           {" "}
           Home &gt; Sobre nós
         </div>
@@ -25,8 +25,8 @@ export default function AbousUs() {
             className="tablet:hidden"
             alt="imagem sobre nós"
           />
-          <div className="flex flex-col w-1/2 tablet:w-full text-xl font-normal px-14 tablet:py-8 mini-tablet:pb-44">
-            <p className="tablet">
+          <div className="flex flex-col w-1/2 tablet:w-full text-xl font-normal px-14 tablet:py-8 mini-tablet:pb-44 ">
+            <p className="">
               Eletricista Autônomo com mais de 8 anos de experiência no setor
               Com vasta experiência em serviços de instalação elétrica
               residencial e comercial, ofereço soluções completas e

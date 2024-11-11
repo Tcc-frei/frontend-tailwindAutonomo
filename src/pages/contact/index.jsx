@@ -8,7 +8,7 @@ export default function Contact() {
     <div>
       <Header />
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-medium text-white absolute">Contato</h1>
+        <h1 className="text-6xl font-medium text-white absolute max-xs:text-4xl">Contato</h1>
         <img
           src="/images/contactImage.svg"
           alt="imagem Contato-Page"
@@ -16,7 +16,7 @@ export default function Contact() {
         />
       </div>
       <div className="flex flex-col  bg-back-about">
-        <div className="w-full py-2  text-span-cinza pl-20">
+        <div className="w-full py-2  text-span-cinza pl-20 max-xs:pl-6">
           {" "}
           Home &gt; Sobre nós
         </div>
@@ -26,8 +26,8 @@ export default function Contact() {
           className="w-full h-auto"
         />
       </div>
-      <div className="flex pl-16 py-10 bg-back-about ">
-        <div className="flex flex-col w-1/2 gap-10  text-xl  ">
+      <div className="flex pl-16 py-10 bg-back-about max-xs:pl-5">
+        <div className="flex flex-col w-1/2 gap-10  text-xl  max-xs:w-full">
           <h1 className="text-4xl font-medium">Informações de contato</h1>
           <div>
             <p>Com mais de 8 anos de experiência no setor, Elethronos!</p>
