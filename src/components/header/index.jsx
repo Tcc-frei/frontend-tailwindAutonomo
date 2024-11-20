@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [modalLista, setModalLista] = useState(false);
   const [lista, setLista] = useState(false);
+
   useEffect(() => {
     if (modalLista == false) {
       setLista(true);
@@ -18,7 +19,7 @@ export default function Header() {
     <header className="flex justify-between items-center h-14  p-4  min-w-full">
       <div className="flex items-center gap-4 max-xs:gap-2">
         <img
-          className="animate-move-lightning w-8 h-8" 
+          className="animate-move-lightning w-8 h-8"
           src="/images/Bolt.svg"
           alt="Imagem Raio"
         />
@@ -34,19 +35,19 @@ export default function Header() {
             <List />
           </li>
           {modalLista && (
-            <div>
-              <div className="bg-white w-32 h-screen absolute right-0 flex flex-col gap-6 items-center shadow-2xl ">
-                <Link to="/">
+            <div className="">
+              <div className="bg-white min-w-full z-20 mt-5 py-7 h-screen absolute right-0 flex flex-col gap-6 items-center shadow-2xl ">
+                <Link to="/" className="min-w-full text-center">
                   <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
                     Home
                   </li>
                 </Link>
-                <Link to="/about">
+                <Link to="/about" className="min-w-full text-center">
                   <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
                     Sobre nós
                   </li>
                 </Link>
-                <Link to="/contact">
+                <Link to="/contact" className="min-w-full text-center">
                   <li className="hover:scale-105 hover:bg-zinc-400  transform hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out  font-medium hover:text-white">
                     Contato
                   </li>
@@ -58,17 +59,17 @@ export default function Header() {
             <div>
               <ul className="flex items-center gap-5 font-Roboto lista:hidden">
                 <Link to="/">
-                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg    py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
                     Home
                   </li>
                 </Link>
                 <Link to="/about">
-                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg py-2 px-3 rounded-lg transition-all duration-300 ease-in-out font-medium hover:text-white">
                     Sobre nós
                   </li>
                 </Link>
                 <Link to="/contact">
-                  <li className="transform hover:scale-105 hover:bg-zinc-400   hover:shadow-lg  py-2 px-3 rounded-lg transition-all duration-300 ease-in-out  font-medium hover:text-white">
+                  <li className="transform hover:scale-105 hover:bg-zinc-400 hover:shadow-lg py-2 px-3 rounded-lg transition-all duration-300 ease-in-out  font-medium hover:text-white">
                     Contato
                   </li>
                 </Link>

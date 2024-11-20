@@ -3,9 +3,10 @@ import Header from "../../components/header";
 import CardPerson from "../../components/cardPerson";
 import Footer from "../../components/footer";
 import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
-    <div className="flex flex-col  ">
+    <div className="flex flex-col">
       <Header />
 
       <div>
@@ -32,8 +33,10 @@ export default function Home() {
       <section className="flex flex-col py-8 px-28 items-center justify-center max-xs:p-0 ">
         <div className="flex gap-10 items-center max-xs:p-2">
           <div className="flex flex-col w-1/2 font-Roboto text-black p-10 gap-10 tablet:w-full max-lg:w-full max-sm1:p-2 max-sm1:w-full max-xs:text-sm max-xs:gap-6 max-xs:mb-10 ">
-            <h2 className="text-4xl font-semibold max-xs:text-2xl">ELETHRONOS</h2>
-            <p className="text-2xl font-normal text-left leading-9 max-sm1:leading-7 max-xs:text-xl "> 
+            <h2 className="text-4xl font-semibold max-xs:text-2xl">
+              ELETHRONOS
+            </h2>
+            <p className="text-2xl font-normal text-left leading-9 max-sm1:leading-7 max-xs:text-xl ">
               presta serviços a mais de 15 anos, sendo firmado como um dos
               serviços mais sólidos do mercado,atuando no mercado com manutenção
               residencial, manutenção de aparelhos eletronicos.
